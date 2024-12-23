@@ -1,0 +1,358 @@
+
+
+
+body {
+    background-color: white;
+}
+
+.herobanner {
+    color: #000C60;
+}
+
+.btns {
+    padding: 40px;
+    font-weight: 600;
+}
+
+.btns #btn1 {
+    padding: 8px 25px;
+    border: 2px solid rgb(0, 12, 96);
+    border-radius: 10px;
+
+
+}
+
+#btn2 {
+    padding: 08px 25px;
+    border: 2px solid rgb(0, 12, 96);
+    border-radius: 10x;
+    margin-left: 20px;
+    background: linear-gradient(to right, rgb(84, 58, 193), rgb(164, 41, 215));
+    color: white;
+
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .herobanner {
+        padding-bottom: 100px;
+        padding-top: 100px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .herobanner h1 {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .header img {
+        max-height: 70px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .start {
+        padding: 0;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .btn1 {
+        padding: 8px 20px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .btn2 {
+        padding: 8px 20px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .cards {
+        margin-top: 0;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 90px;
+
+    }
+    .cards1 {
+        margin-top: 50px;
+
+    }
+    .cards2 {
+        margin-left: 48px;
+        
+
+    }
+    .cards3 {
+        margin-top: -80px;
+
+    }
+
+
+    .link {
+        margin-left: 0;
+
+    }
+}
+
+
+@media (min-width: 769px) {
+    .cards {
+        justify-content: space-around;
+    }
+
+    .card {
+        margin-top: -20px;
+
+    }
+
+    .link {
+        margin-left: auto;
+        display: block;
+        width: fit-content;
+    }
+}
+
+
+.star1 {
+    position: absolute;
+    top: 300px;
+    left: 220px;
+    animation: star1 10s infinite;
+}
+
+@keyframes star1 {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.25);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.star2 {
+    position: absolute;
+    top: 250px;
+    left: 460px;
+    animation: star2 10s infinite;
+}
+
+@keyframes star2 {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.25);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.star3 {
+    position: absolute;
+    top: 470px;
+    right: 500px;
+    animation: star3 10s infinite;
+}
+
+@keyframes star3 {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.25);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.star4 {
+    position: absolute;
+    top: 370px;
+    right: 420px;
+    animation: star4 10s infinite;
+}
+
+@keyframes star4 {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.25);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.card-title {
+    color: #000C60;
+}
+
+.link {
+    color: #A774F4;
+}
+
+.ser {
+    transition: transform 0.5s ease-in;
+}
+
+.ser:hover {
+    transform: scale(1.1);
+}
+
+#card {
+    transition: transform 0.5s ease-in;
+}
+
+#card:hover {
+    transform: scale(1.1);
+}
+
+#font {
+    color: #000C60;
+    padding: 10px 30px;
+    background-color: #ffebeb;
+    border-radius: 30px;
+}
+
+.industrySection {
+    position: relative;
+}
+
+.bg1 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transition: 0.5s all;
+
+}
+
+.bg2 {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    transition: 0.5s all;
+}
+
+.rope1 {
+    position: absolute;
+    bottom: 0;
+    /* Start from the bottom */
+    animation: moveUpDown 8s ease infinite;
+}
+
+@keyframes moveUpDown {
+    0% {
+        bottom: 0;
+        /* Start at the bottom */
+    }
+
+    50% {
+        bottom: 5%;
+        /* Move up slightly */
+    }
+
+    100% {
+        bottom: 0;
+        /* Return to the bottom */
+    }
+}
+
+.ro {
+    position: relative;
+}
+
+.rope2 {
+    position: absolute;
+    left: 50%;
+    /* Center horizontally */
+    bottom: 50%;
+    /* Center vertically */
+    transform: translate(-50%, 50%);
+    /* Adjust for element's width and height */
+    animation: UpDown 8s ease infinite;
+}
+
+@keyframes UpDown {
+    0% {
+        transform: translate(-50%, 50%) translateY(0);
+        /* Start at the center */
+    }
+
+    50% {
+        transform: translate(-50%, 50%) translateY(-20%);
+        /* Move up slightly */
+    }
+
+    100% {
+        transform: translate(-50%, 50%) translateY(0);
+        /* Return to the center */
+    }
+}
+
+
+.bg3 {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+}
+
+.bg4 {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+}
+
+
+.caro {
+    position: absolute;
+}
+
+.box {
+    position: relative;
+    z-index: 3;
+}
+
+.cardd {
+    background-color: white;
+}
+
+.container {
+    justify-content: center;
+
+
+}
+
+
+.footer {
+    background-color: white;
+    position: relative;
+    padding: 20px 0 50px;
+
+}
